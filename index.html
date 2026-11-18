@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>soranoiro.net</title>
+<meta name="description" content="菅野昌英のサイトです。畑と田んぼの生産、産直、GAPの現場で使える道具を公開しています。">
+<meta name="theme-color" content="#1f5fa8">
+<link rel="canonical" href="https://soranoiro.net/">
+<style>
+  :root {
+    --accent: #1f5fa8;
+    --accent-soft: #e8f0fa;
+    --bg: #f6f8fb;
+    --card: #ffffff;
+    --text: #1f2933;
+    --muted: #5b6673;
+    --line: #dde3ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --accent: #7fb0eb;
+      --accent-soft: #1d2b3d;
+      --bg: #12161b;
+      --card: #1a2027;
+      --text: #e6eaef;
+      --muted: #a3adb8;
+      --line: #2c3540;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic UI", "Meiryo", sans-serif;
+    line-height: 1.8;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+  header {
+    background: var(--accent);
+    color: #fff;
+    padding: 40px 0 32px;
+  }
+  @media (prefers-color-scheme: dark) {
+    header { background: #163f6e; }
+  }
+  .site { margin: 0; font-size: 0.95rem; letter-spacing: 0.04em; opacity: 0.9; }
+  h1 { margin: 6px 0 4px; font-size: 1.7rem; line-height: 1.4; }
+  .role { margin: 0; font-size: 1rem; opacity: 0.95; }
+  .lead { margin: 18px 0 0; font-size: 0.98rem; opacity: 0.95; }
+  main.wrap { padding-top: 32px; padding-bottom: 8px; }
+  section { margin-bottom: 36px; }
+  h2 {
+    font-size: 1.2rem;
+    margin: 0 0 14px;
+    padding-left: 10px;
+    border-left: 4px solid var(--accent);
+    line-height: 1.5;
+  }
+  .card {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    color: inherit;
+    text-decoration: none;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  a.card:hover, a.card:focus-visible {
+    border-color: var(--accent);
+    box-shadow: 0 2px 10px rgba(31, 95, 168, 0.12);
+    outline: none;
+  }
+  .card h3 { margin: 0 0 4px; font-size: 1.08rem; color: var(--accent); }
+  .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+  .card .url { display: inline-block; margin-top: 8px; font-size: 0.88rem; color: var(--accent); }
+  ul.plain { margin: 0; padding-left: 1.2em; }
+  ul.plain li { margin-bottom: 4px; }
+  dl.profile { margin: 0; display: grid; grid-template-columns: 6.5em 1fr; gap: 6px 12px; }
+  dl.profile dt { color: var(--muted); }
+  dl.profile dd { margin: 0; }
+  .box {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .note {
+    background: var(--accent-soft);
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .note p { margin: 0; }
+  a { color: var(--accent); }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 18px 0 28px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  footer p { margin: 0; }
+  @media (max-width: 480px) {
+    h1 { font-size: 1.45rem; }
+    dl.profile { grid-template-columns: 1fr; gap: 0; }
+    dl.profile dd { margin-bottom: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="site">soranoiro.net</p>
+    <h1>菅野昌英</h1>
+    <p class="role"></p>
+    <p class="lead">畑と田んぼの生産、産直とGAPの取り組みの現場で使える道具を公開しています。</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <h2>公開中の道具</h2>
+    <a class="card" href="https://gap.soranoiro.net/">
+      <h3>産直・GAPの道具箱</h3>
+      <p>生協産直マネジメントシステムの点検表を、スマホやパソコンで入力できる「Excel点検表 入力ツール」（試作版）などを公開しています。</p>
+      <span class="url">gap.soranoiro.net</span>
+    </a>
+    <a class="card" href="https://weather.soranoiro.net/">
+      <h3>農業気象ダッシュボード</h3>
+      <p>気象庁の観測データをもとに、地点ごとの気温・日照時間・降水量の推移や、積算温度などの指標を年ごとに比べられます。</p>
+      <span class="url">weather.soranoiro.net</span>
+    </a>
+  </section>
+
+
+  <section>
+    <div class="note">
+      <p>Tool・アプリは、菅野個人の責任で公開しています。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; soranoiro.net</p>
+  </div>
+</footer>
+
+</body>
+</html>
